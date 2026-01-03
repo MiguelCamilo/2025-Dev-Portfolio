@@ -254,7 +254,7 @@ export const DATA = {
     },
     {
       title: "Jobly",
-      href: "https://llm.report",
+      href: "https://jobly-careers.vercel.app/",
       dates: "2024",
       active: true,
       description:
