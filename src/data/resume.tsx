@@ -222,37 +222,6 @@ export const DATA = {
         "https://0xd31ij6emv2ohnp.public.blob.vercel-storage.com/digitz-web.mp4",
     },
     {
-      title: "DevLink",
-      href: "https://devlinkapp.vercel.app/",
-      dates: "2024",
-      active: true,
-      description:
-        "DevLink is a tech community for anyone, whether you're a seasoned developer, a student just getting started, or simply tech curious, there's a place where you can ask questions and find out more about the tech community!",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "MongoDB",
-        "Prisma",
-        "NextAuth",
-        "TailwindCSS",
-        "Shadcn UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://devlinkapp.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/MiguelCamilo/DevLinks-App",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://0xd31ij6emv2ohnp.public.blob.vercel-storage.com/devlink-web.mp4",
-    },
-    {
       title: "Jobly",
       href: "https://jobly-careers.vercel.app/",
       dates: "2024",
@@ -284,35 +253,37 @@ export const DATA = {
       image: "",
       video: "https://0xd31ij6emv2ohnp.public.blob.vercel-storage.com/jobly-web.mp4",
     },
-    // {
-    //   title: "Automatic Chat",
-    //   href: "https://automatic.chat",
-    //   dates: "April 2023 - March 2024",
-    //   active: true,
-    //   description:
-    //     "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-    //   technologies: [
-    //     "Next.js",
-    //     "Typescript",
-    //     "PostgreSQL",
-    //     "Prisma",
-    //     "TailwindCSS",
-    //     "Shadcn UI",
-    //     "Magic UI",
-    //     "Stripe",
-    //     "Cloudflare Workers",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://automatic.chat",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //   ],
-    //   image: "",
-    //   video:
-    //     "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
-    // },
+    {
+      title: "DevLink",
+      href: "https://devlinkapp.vercel.app/",
+      dates: "2024",
+      active: true,
+      description:
+        "DevLink is a tech community for anyone, whether you're a seasoned developer, a student just getting started, or simply tech curious, there's a place where you can ask questions and find out more about the tech community!",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "MongoDB",
+        "Prisma",
+        "NextAuth",
+        "TailwindCSS",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://devlinkapp.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/MiguelCamilo/DevLinks-App",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "https://0xd31ij6emv2ohnp.public.blob.vercel-storage.com/devlink-web.mp4",
+    },
   ],
   hackathons: [
     {
