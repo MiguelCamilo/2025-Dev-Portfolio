@@ -96,14 +96,30 @@ export const DATA = {
       displayChevron: true,
       links: [],
       badges: ["Typesript", "Next.js", "NEST.js", "MySQL", "Postgres", "Redis", "GCP", "Docker", "PHP", "Laravel"],
+      location: "Hybrid - Parkland, FL",
+      title: "Senior Software Engineer",
+      logoUrl: "/site_impact_logo.jpeg",
+      start: "March 2026",
+      end: "Present",
+      description: [
+        "Developed a Traffic Quality System analytics dashboard, creating a centralized solution to monitor campaign traffic quality metrics ( Click Through Rate, Shown Percentage, etc). This implementation reduced manual workload for 4 media buyers and an overseas team by 6 hours per day, allowing them to focus on revenue generating tasks.",
+      ],
+    },
+    {
+      company: "Site Impact",
+      href: "https://siteimpact.com",
+      hasBadges: true,
+      hasLinks: false,
+      displayChevron: true,
+      links: [],
+      badges: [],
       location: "Hybrid/Remote - Parkland, FL",
       title: "Software Engineer",
       logoUrl: "/site_impact_logo.jpeg",
       start: "February 2024",
-      end: "Present",
+      end: "Febuary 2026",
       description: [
-        "Developed a Traffic Quality System analytics dashboard, creating a centralized solution to monitor campaign traffic quality metrics ( Click Through Rate, Shown Percentage, etc). This implementation reduced manual workload for 4 media buyers and an overseas team by 6 hours per day, allowing them to focus on revenue generating tasks.",
-        "Developed a Monetization Platform using NextJS, Payload CMS, and Tanstack Query. This project generatedadditional revenue through Google Adsense integration, enabling the company to reinvest in higher quality traffic, resulting in 30% increase in customer retention and campaign orders."
+        // "Developed a Monetization Platform using NextJS, Payload CMS, and Tanstack Query. This project generatedadditional revenue through Google Adsense integration, enabling the company to reinvest in higher quality traffic, resulting in 30% increase in customer retention and campaign orders."
       ],
     },
     {
