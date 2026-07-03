@@ -24,7 +24,7 @@ interface ResumeCardProps {
   displayChevron?: boolean;
   links?: readonly { label: string; href: string }[];
   badges?: readonly string[];
-  period: string;
+  period?: string;
   description?: readonly string[];
 }
 export const ResumeCard = ({
@@ -85,7 +85,7 @@ export const ResumeCard = ({
               onClick={handleClick}
             >
               <div className="flex items-center justify-between gap-x-2 text-base">
-                <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
+                <h3 className="inline-flex items-center justify-center font-bold leading-none text-xs sm:text-sm">
                   {title}
                   {displayChevron && (
                     <ChevronRightIcon

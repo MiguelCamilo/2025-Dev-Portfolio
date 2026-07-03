@@ -56,14 +56,14 @@ export default function Page() {
             <h2 className="text-xl font-bold">Work Experience</h2>
           </BlurFade>
           {DATA.work.reduce<{ company: string; href?: string; logoUrl: string; location: string; roles: (typeof DATA.work)[number][] }[]>((acc, work) => {
-              const last = acc[acc.length - 1];
-              if (last && last.company === work.company) {
-                last.roles.push(work);
-              } else {
-                acc.push({ company: work.company, href: work.href, logoUrl: work.logoUrl, location: work.location, roles: [work] });
-              }
-              return acc;
-            }, []).map((group, id) => (
+            const last = acc[acc.length - 1];
+            if (last && last.company === work.company) {
+              last.roles.push(work);
+            } else {
+              acc.push({ company: work.company, href: work.href, logoUrl: work.logoUrl, location: work.location, roles: [work] });
+            }
+            return acc;
+          }, []).map((group, id) => (
             <BlurFade key={`${group.company}-${id}`} delay={BLUR_FADE_DELAY * 6 + id * 0.05}>
               {group.roles.length > 1 ? (
                 <GroupedResumeCard
@@ -104,6 +104,34 @@ export default function Page() {
           ))}
         </div>
       </section>
+
+      <section id="certifications">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 7}>
+            <h2 className="text-xl font-bold">Certifications</h2>
+          </BlurFade>
+          {DATA.certifications.map((certification, id) => (
+            <BlurFade
+              key={certification.title}
+              delay={BLUR_FADE_DELAY * 8 + id * 0.05}
+            >
+              <ResumeCard
+                key={certification.title}
+                id={id}
+                href={certification.url}                
+                logoUrl={certification.logoUrl}
+                displayChevron={certification.displayChevron}
+                altText={certification.title}
+                title={certification.title}
+                subtitle={certification.certificationProvider}
+                hasLinks={certification.hasLinks}
+                links={certification.links}                
+              />
+            </BlurFade>
+          ))}
+        </div>
+      </section>
+
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
@@ -121,8 +149,8 @@ export default function Page() {
                 displayChevron={education.displayChevron}
                 logoUrl={education.logoUrl}
                 altText={education.school}
-                title={education.school}
-                subtitle={education.degree}
+                title={education.degree}
+                subtitle={education.school}
                 period={`${education.start} - ${education.end}`}
               />
             </BlurFade>
@@ -136,13 +164,21 @@ export default function Page() {
           </BlurFade>
           <div className="flex flex-wrap gap-1">
             {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill} variant="secondary">{skill}</Badge>
+              <BlurFade key={skill.name} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                <Link href={skill.url} target="_blank">
+                  <Badge
+                    variant="secondary"
+                    className="hover:shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:ring-1 hover:ring-muted-foreground/30 hover:ring-offset-2 hover:ring-offset-background"
+                  >
+                    {skill.name}
+                  </Badge>
+                </Link>
               </BlurFade>
             ))}
           </div>
         </div>
       </section>
+
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
@@ -166,21 +202,21 @@ export default function Page() {
             {DATA.projects.map((project, id) => (
               project.active ? (
                 <BlurFade
-                key={project.title}
-                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
-              >
-                <ProjectCard
-                  href={project.href}
                   key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  dates={project.dates}
-                  tags={project.technologies}
-                  image={project.image}
-                  video={project.video}
-                  links={project.links}
-                />
-              </BlurFade>
+                  delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                >
+                  <ProjectCard
+                    href={project.href}
+                    key={project.title}
+                    title={project.title}
+                    description={project.description}
+                    dates={project.dates}
+                    tags={project.technologies}
+                    image={project.image}
+                    video={project.video}
+                    links={project.links}
+                  />
+                </BlurFade>
               ) : null
             ))}
           </div>
