@@ -104,7 +104,7 @@ export const DATA = {
       start: "March 2026",
       end: "Present",
       description: [
-        "Developed a Traffic Quality System analytics dashboard, creating a centralized solution to monitor campaign traffic quality metrics ( Click Through Rate, Shown Percentage, etc). This implementation reduced manual workload for 4 media buyers and an overseas team by 6 hours per day, allowing them to focus on revenue generating tasks.",
+        // "Developed a Traffic Quality System analytics dashboard, creating a centralized solution to monitor campaign traffic quality metrics ( Click Through Rate, Shown Percentage, etc). This implementation reduced manual workload for 4 media buyers and an overseas team by 6 hours per day, allowing them to focus on revenue generating tasks.",
       ],
     },
     {
@@ -129,7 +129,7 @@ export const DATA = {
       href: "https://manitlabs.com/",
       hasBadges: true,
       hasLinks: false,
-      displayChevron: true,
+      displayChevron: false,
       links: [],
       badges: [],
       location: "Fort Lauderdale, FL",
@@ -138,16 +138,16 @@ export const DATA = {
       start: "August 2023",
       end: "November 2023",
       description: [
-        "Collaborated with the teams UI/UX designer to build out web UI components using React.",
-        "Participated in AGILE code reviews in a bi-weekly schedule using JIRA to review current and upcoming sprint goals.",
-        "Developed reusable React components using Storybook to test and organize the components and also focused on performance best practices with testing using Jest.",
+        // "Collaborated with the teams UI/UX designer to build out web UI components using React.",
+        // "Participated in AGILE code reviews in a bi-weekly schedule using JIRA to review current and upcoming sprint goals.",
+        // "Developed reusable React components using Storybook to test and organize the components and also focused on performance best practices with testing using Jest.",
       ],
     },
     {
       company: "Emergency Co.",
       hasBadges: true,
       hasLinks: true,
-      displayChevron: true,
+      displayChevron: false,
       links: [
         {
           label: "Fox News Coverage",
@@ -166,9 +166,9 @@ export const DATA = {
       start: "January 2021",
       end: "April 2021",
       description: [
-        "Contributed to emergency response platform frontend as part of 5-engineer team that served 2000 users during Hurricane Ian's first 24 hours, with app data utilized by Florida Division of Emergency Management for disaster recovery efforts.",
-        "Developed critical UI components during crisis deployment, including interactive weather condition filter controls, real-time news integration module, and primary navigation system, enabling users to access life-saving emergency information during active disaster events.",
-        "Implemented responsive UI components using React and Tailwind CSS that successfully handled 2000 concurrent users during Hurricane Ian without performance degradation, ensuring emergency information remained accessible during disaster response periods."
+        // "Contributed to emergency response platform frontend as part of 5-engineer team that served 2000 users during Hurricane Ian's first 24 hours, with app data utilized by Florida Division of Emergency Management for disaster recovery efforts.",
+        // "Developed critical UI components during crisis deployment, including interactive weather condition filter controls, real-time news integration module, and primary navigation system, enabling users to access life-saving emergency information during active disaster events.",
+        // "Implemented responsive UI components using React and Tailwind CSS that successfully handled 2000 concurrent users during Hurricane Ian without performance degradation, ensuring emergency information remained accessible during disaster response periods."
       ],
     },
     {
@@ -176,7 +176,7 @@ export const DATA = {
       href: "https://apple.com",
       hasBadges: false,
       hasLinks: false,
-      displayChevron: true,
+      displayChevron: false,
       links: [],
       badges: [],
       location: "Palm Beach Gardens, FL",
@@ -185,8 +185,8 @@ export const DATA = {
       start: "April 2019",
       end: "July 2024",
       description: [
-        "Maintained an average  customer satisfaction rating of 95% by providing expert technical support and troubleshooting  software systems, as well as offering exceptional customer service.",
-        "Collaborated effectively with team members to achieve team goals and objectives, contributing to team performance and providing guidance and mentorship. Earned Apple Certified iOS Technician (ACiT) certifications."
+        // "Maintained an average  customer satisfaction rating of 95% by providing expert technical support and troubleshooting  software systems, as well as offering exceptional customer service.",
+        // "Collaborated effectively with team members to achieve team goals and objectives, contributing to team performance and providing guidance and mentorship. Earned Apple Certified iOS Technician (ACiT) certifications."
       ],
     },
   ],
